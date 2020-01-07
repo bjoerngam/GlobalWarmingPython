@@ -15,12 +15,12 @@ L = 1350 # Watt/ms
 albedo = 0.3 
 epsilon = 1
 sigmon = 5.67E-8 #H/m2 K4
-years = 1000 #years
+years = 100 #years
 ###############################################################
 
 heatCapacity = waterDepth * 4.2E6 #J/K m2 calculate the heatCapacity
 timeYears = [0] #initialization of the years
-TK = [0.] #initialization of the temperatur 
+TK = [400] #initialization of the temperatur 
 heatContent = heatCapacity * TK[0] #calculate the first heatContent
 heatIn = L * (1 - albedo) / 4 #calculate the heat in temperature
 heatOut = 0 #initialization of the out temperature
